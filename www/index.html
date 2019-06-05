@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+Temperature Converter
+        </title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+<body style="background-color:antiquewhite" class="container">
+    <script>
+        function convert(){
+var f=document.getElementById('f')
+var a=document.getElementById('1')
+var celsius=((f.value-32)*5/9)
+a.innerHTML="Temperature in degree celsius: "+ " "+celsius
+        }
+        </script>
+
+
+<h1 class="mt-5">Temperature Converter</h1>
+<div class="justify-content-center">
+<input class="form-control" style="width:300px" id="f" type="text"
+ placeholder="Temp in Fahraneit"></div>
+<button  class="btn btn-danger mt-3" onclick="convert()">Convert</button>
+<br/><br/>
+<p id="1" class="lead " style="font-weight: bolder">Temperature in degree celsius: </p>
+
+
+</body>
+
+</html>
